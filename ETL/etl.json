@@ -1,0 +1,109 @@
+{
+    "InputData": [
+        {
+            "srcFile": "/Users/phuongtnd/Documents/GitHub/DI_Assigment02_2024/Project/input/tgdd.json",
+            "mapping": [
+                {
+                    "FieldName": "DataSource",
+                    "DefaultValue": "TGDD",
+                    "SrcField": "DataSource",
+                    "DstField": "prd_src"
+                },
+                {
+                    "FieldName": "DataDomain",
+                    "DefaultValue": "https://www.thegioididong.com",
+                    "SrcField": "DataDomain",
+                    "DstField": "prd_domain"
+                },
+                {
+                    "FieldName": "DataLink",
+                    "DefaultValue": "",
+                    "SrcField": "PrdLink",
+                    "DstField": "prd_link"
+                },
+                {
+                    "FieldName": "DataPrice",
+                    "DefaultValue": "",
+                    "SrcField": "PrdPrice",
+                    "DstField": "prd_price"
+                },
+                {
+                    "FieldName": "DataName",
+                    "DefaultValue": "",
+                    "SrcField": "PrdName",
+                    "DstField": "prd_name"
+                }
+            ]
+        },
+        {
+            "srcFile": "/Users/phuongtnd/Documents/GitHub/DI_Assigment02_2024/Project/input/HoangHa.json",
+            "mapping": [
+                {
+                    "FieldName": "DataSource",
+                    "DefaultValue": "HH",
+                    "SrcField": "DataSource",
+                    "DstField": "prd_src"
+                },
+                {
+                    "FieldName": "DataDomain",
+                    "DefaultValue": "https://hoanghamobile.com",
+                    "SrcField": "DataDomain",
+                    "DstField": "prd_domain"
+                },
+                {
+                    "FieldName": "DataLink",
+                    "DefaultValue": "",
+                    "SrcField": "PrdLink",
+                    "DstField": "prd_link"
+                },
+                {
+                    "FieldName": "DataPrice",
+                    "DefaultValue": "",
+                    "SrcField": "PrdPrice",
+                    "DstField": "prd_price"
+                },
+                {
+                    "FieldName": "DataName",
+                    "DefaultValue": "",
+                    "SrcField": "PrdName",
+                    "DstField": "prd_name"
+                }
+            ]
+        },
+        {
+            "srcFile": "/Users/phuongtnd/Documents/GitHub/DI_Assigment02_2024/Project/input/fptShop.json",
+            "mapping": [
+                {
+                    "FieldName": "DataSource",
+                    "DefaultValue": "FPT",
+                    "SrcField": "DataSource",
+                    "DstField": "prd_src"
+                },
+                {
+                    "FieldName": "DataDomain",
+                    "DefaultValue": "https://fptshop.com.vn",
+                    "SrcField": "DataDomain",
+                    "DstField": "prd_domain"
+                },
+                {
+                    "FieldName": "DataLink",
+                    "DefaultValue": "",
+                    "SrcField": "PrdLink",
+                    "DstField": "prd_link"
+                },
+                {
+                    "FieldName": "DataPrice",
+                    "DefaultValue": "",
+                    "SrcField": "PrdPrice",
+                    "DstField": "prd_price"
+                },
+                {
+                    "FieldName": "DataName",
+                    "DefaultValue": "",
+                    "SrcField": "PrdName",
+                    "DstField": "prd_name"
+                }
+            ]
+        }
+    ]
+}
