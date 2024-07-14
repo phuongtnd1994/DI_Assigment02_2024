@@ -58,8 +58,27 @@ io.on("connection", (socket) => {
       });
   });
 
-  socket.on("getInfo", (msg) => {});
+  socket.on("getInfo", (msg) => {
+    console.log(msg);
+
+    regStr = msg.split(" ").join(", ");
+
+    const query = `Select * from products where id in (${regStr})`;
+
+    client
+      .query(query)
+      .then((res) => {
+        data = res.rows;
+
+        io.emit("rsp", `sent ${regStr} to crawlers`);
+      })
+      .catch((err) => {
+        io.emit("rsp", err.stack);
+      });
+  });
 });
+
+(async () => {})();
 
 const PORT = config.PORT_SERVER;
 
