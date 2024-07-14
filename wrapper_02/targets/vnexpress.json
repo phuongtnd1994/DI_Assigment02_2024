@@ -1,0 +1,65 @@
+{
+    "Target_links": [
+        {
+            "url": "https://vnexpress.net/"
+        }
+    ],
+    "rules": [
+        {
+            "location": [
+                {
+                    "tag": "div",
+                    "attribute": {
+                        "att_type": "id",
+                        "att_value": "automation_TV0"
+                    },
+                    "tag_index": 0
+                }
+            ],
+            "extractors": [
+                {
+                    "field_name": "Danh sách tin",
+                    "start": [],
+                    "extractors": [
+                        {
+                            "field_name": "Tên danh sách tin",
+                            "start": [
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "<article"
+                                },
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "<a"
+                                },
+                                {
+                                    "operator": "SkipTo",
+                                    "value": ">"
+                                }
+                            ],
+                            "extractors": [],
+                            "end": [
+                                {
+                                    "operator": "BackTo",
+                                    "value": "</a>"
+                                },
+                                {
+                                    "operator": "BackTo",
+                                    "value": "</h3>"
+                                }
+                            ],
+                            "isArray": false
+                        }
+                    ],
+                    "end": [
+                        {
+                            "operator": "BackTo",
+                            "value": "ignore"
+                        }
+                    ],
+                    "isArray": true
+                }
+            ]
+        }
+    ]
+}

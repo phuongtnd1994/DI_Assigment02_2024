@@ -1,0 +1,224 @@
+{
+    "Target_links": [
+        {
+            "url": "https://www.thegioididong.com/dtdd/oppo-reno11-f-5g"
+        },
+        {
+            "url": "https://www.thegioididong.com/dtdd/samsung-galaxy-s24-ultra-5g"
+        },
+        {
+            "url": "https://www.thegioididong.com/dtdd/iphone-15-pro-max"
+        }
+    ],
+    "Modified_hearder": {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
+        "Referer": "https://www.thegioididong.com/",
+        "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+        "sec-ch-ua-platform": "\"macOS\""
+    },
+    "rules": [
+        {
+            "location": [
+                {
+                    "tag": "div",
+                    "attribute": {
+                        "att_type": "class",
+                        "att_value": "box-price"
+                    },
+                    "tag_index": 0
+                }
+            ],
+            "extractors": [
+                {
+                    "field_name": "Giá hiện tại",
+                    "start": [
+                        {
+                            "operator": "SkipTo",
+                            "value": "<p class=\"box-price-present\">"
+                        }
+                    ],
+                    "extractors": [],
+                    "end": [
+                        {
+                            "operator": "BackTo",
+                            "value": "</p>"
+                        }
+                    ],
+                    "isArray": false
+                },
+                {
+                    "field_name": "Giá cũ",
+                    "start": [
+                        {
+                            "operator": "SkipTo",
+                            "value": "<p class=\"box-price-old\">"
+                        }
+                    ],
+                    "extractors": [],
+                    "end": [
+                        {
+                            "operator": "BackTo",
+                            "value": "</p>"
+                        }
+                    ],
+                    "isArray": false
+                },
+                {
+                    "field_name": "Mức giảm giá",
+                    "start": [
+                        {
+                            "operator": "SkipTo",
+                            "value": "<p class=\"box-price-percent\">"
+                        }
+                    ],
+                    "extractors": [],
+                    "end": [
+                        {
+                            "operator": "BackTo",
+                            "value": "</p>"
+                        }
+                    ],
+                    "isArray": false
+                }
+            ]
+        },
+        {
+            "location": [
+                {
+                    "tag": "div",
+                    "attribute": {
+                        "att_type": "class",
+                        "att_value": "parameter"
+                    },
+                    "tag_index": 0
+                }
+            ],
+            "extractors": [
+                {
+                    "field_name": "Thông số kỹ thuật",
+                    "start": [
+                        {
+                            "operator": "SkipTo",
+                            "value": "<ul class=\"parameter\""
+                        },
+                        {
+                            "operator": "SkipTo",
+                            "value": "\">"
+                        }
+                    ],
+                    "extractors": [
+                        {
+                            "field_name": "Tên thông sô",
+                            "start": [
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "<p class=\"lileft\">"
+                                }
+                            ],
+                            "extractors": [],
+                            "end": [
+                                {
+                                    "operator": "BackTo",
+                                    "value": "</p>"
+                                },
+                                {
+                                    "operator": "BackTo",
+                                    "value": ":"
+                                }
+                            ],
+                            "isArray": false
+                        },
+                        {
+                            "field_name": "Giá trị",
+                            "start": [
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "<span class=\"\">"
+                                }
+                            ],
+                            "extractors": [],
+                            "end": [
+                                {
+                                    "operator": "BackTo",
+                                    "value": "</span>"
+                                },
+                                {
+                                    "operator": "BackTo",
+                                    "value": "<span"
+                                }
+                            ],
+                            "isArray": false
+                        }
+                    ],
+                    "end": [
+                        {
+                            "operator": "BackTo",
+                            "value": "</ul>"
+                        }
+                    ],
+                    "isArray": true
+                }
+            ]
+        },
+        {
+            "location": [
+                {
+                    "tag": "ul",
+                    "attribute": {
+                        "att_type": "class",
+                        "att_value": "rate-list"
+                    },
+                    "tag_index": 0
+                }
+            ],
+            "extractors": [
+                {
+                    "field_name": "Đánh giá",
+                    "start": [],
+                    "extractors": [
+                        {
+                            "field_name": "Rate 5 sao",
+                            "start": [
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "<span class=\"number-percent\">"
+                                }
+                            ],
+                            "extractors": [],
+                            "end": [
+                                {
+                                    "operator": "BackTo",
+                                    "value": "</span>"
+                                }
+                            ],
+                            "isArray": false
+                        },
+                        {
+                            "field_name": "Rate 4 sao",
+                            "start": [
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "<span class=\"number-percent\">"
+                                },
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "<span class=\"number-percent\">"
+                                }
+                            ],
+                            "extractors": [],
+                            "end": [
+                                {
+                                    "operator": "BackTo",
+                                    "value": "</span>"
+                                }
+                            ],
+                            "isArray": false
+                        }
+                    ],
+                    "end": [],
+                    "isArray": false
+                }
+            ]
+        }
+    ]
+}

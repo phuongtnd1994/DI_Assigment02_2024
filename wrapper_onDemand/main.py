@@ -268,10 +268,16 @@ def callback(ch, method, properties, body):
             if rs.get("promotion") is not None:
                 for s in rs["promotion"]:
                     s["KhuyenMai"] = fineString(s["KhuyenMai"])
+            dt["prd_km"] = rs.get("promotion")
 
-            print(rs)
+            
         except:
             continue
+    
+    print(data)
+    
+    channel.basic_publish('','response_queue', json.dumps(data))
+
 
 def fineString(s):
     try:

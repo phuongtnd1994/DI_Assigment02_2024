@@ -1,0 +1,97 @@
+{
+    "Target_links": [
+        {
+            "url": "https://fptshop.com.vn/dien-thoai/samsung-galaxy-s23-fe?dung-luong=128gb"
+        },
+        {
+            "url": "https://fptshop.com.vn/dien-thoai/oppo-reno11-f"
+        },
+        {
+            "url": "https://fptshop.com.vn/dien-thoai/xiaomi-poco-m6-pro"
+        },
+        {
+            "url": "https://fptshop.com.vn/dien-thoai/honor-x7b"
+        },
+        {
+            "url": "https://fptshop.com.vn/dien-thoai/iphone-15-pro-max"
+        }
+    ],
+    "Modified_hearder": {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
+        "Referer": "https://www.thegioididong.com/",
+        "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+        "sec-ch-ua-platform": "\"macOS\""
+    },
+    "rules": [
+        {
+            "location": [
+                {
+                    "tag": "table",
+                    "attribute": {
+                        "att_type": "class",
+                        "att_value": "st-pd-table"
+                    },
+                    "tag_index": 0
+                }
+            ],
+            "extractors": [
+                {
+                    "field_name": "Thông số kỹ thuật",
+                    "start": [
+                        {
+                            "operator": "SkipTo",
+                            "value": "<tbody>"
+                        }
+                    ],
+                    "extractors": [
+                        {
+                            "field_name": "Tên thông sô",
+                            "start": [
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "<td>"
+                                }
+                            ],
+                            "extractors": [],
+                            "end": [
+                                {
+                                    "operator": "BackTo",
+                                    "value": "</td>"
+                                }
+                            ],
+                            "isArray": false
+                        },
+                        {
+                            "field_name": "Giá trị",
+                            "start": [
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "<td>"
+                                },
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "<td>"
+                                }
+                            ],
+                            "extractors": [],
+                            "end": [
+                                {
+                                    "operator": "BackTo",
+                                    "value": "</td>"
+                                }
+                            ],
+                            "isArray": false
+                        }
+                    ],
+                    "end": [
+                        {
+                            "operator": "BackTo",
+                            "value": "</tbody>"
+                        }
+                    ],
+                    "isArray": true
+                }
+            ]
+        }
+    ]
+}

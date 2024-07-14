@@ -111,6 +111,7 @@ const rburl = `amqp://${config.RABBIT_CONFIG.host}:${config.RABBIT_CONFIG.port}`
       if (msg !== null) {
         const receivedMessage = msg.content.toString();
         console.log(receivedMessage);
+        io.emit("rsp", JSON.parse(receivedMessage));
       }
     });
   } catch (error) {
