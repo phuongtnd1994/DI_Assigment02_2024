@@ -22,6 +22,10 @@ client
 
 const app = express();
 
+let channel = null;
+const sendQueue = "request_queue";
+const receiveQueue = "response_queue";
+
 const server = http.createServer(app);
 
 const io = new Server(server, {
@@ -69,6 +73,7 @@ io.on("connection", (socket) => {
       .query(query)
       .then((res) => {
         data = res.rows;
+        channel.sendToQueue(sendQueue, Buffer.from(JSON.stringify(data)));
 
         io.emit("rsp", `sent ${regStr} to crawlers`);
       })
@@ -78,7 +83,40 @@ io.on("connection", (socket) => {
   });
 });
 
-(async () => {})();
+/* Rabbit mq */
+const amqp = require("amqplib");
+const opt = {
+  credentials: amqp.credentials.plain(
+    config.RABBIT_CONFIG.username,
+    config.RABBIT_CONFIG.password
+  ),
+};
+
+const rburl = `amqp://${config.RABBIT_CONFIG.host}:${config.RABBIT_CONFIG.port}`;
+
+(async () => {
+  try {
+    const conn = await amqp.connect(rburl, opt);
+
+    console.log("Connected to rabbitmq");
+
+    channel = await conn.createChannel();
+    // const channel2 = await conn.createChannel();
+
+    await channel.assertQueue(sendQueue, { durable: false });
+
+    await channel.assertQueue(receiveQueue, { durable: false });
+
+    channel.consume(receiveQueue, (msg) => {
+      if (msg !== null) {
+        const receivedMessage = msg.content.toString();
+        console.log(receivedMessage);
+      }
+    });
+  } catch (error) {
+    console.error("Error:", error);
+  }
+})();
 
 const PORT = config.PORT_SERVER;
 

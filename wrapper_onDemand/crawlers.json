@@ -1,0 +1,54 @@
+{
+    "TGDD": {
+        "rules": [
+            {
+                "location": [
+                    {
+                        "tag": "div",
+                        "attribute": {
+                            "att_type": "class",
+                            "att_value": "pr-content"
+                        },
+                        "tag_index": 0
+                    }
+                ],
+                "extractors": [
+                    {
+                        "field_name": "promotion",
+                        "start": [],
+                        "extractors": [
+                            {
+                                "field_name": "PrdLink",
+                                "start": [
+                                    {
+                                        "operator": "SkipTo",
+                                        "value": "class=\"divb-right\""
+                                    },
+                                    {
+                                        "operator": "SkipTo",
+                                        "value": "<p>"
+                                    }
+                                ],
+                                "extractors": [],
+                                "end": [
+                                    {
+                                        "operator": "BackTo",
+                                        "value": "</p>"
+                                    }
+                                ],
+                                "isArray": false
+                            }
+                        ],
+                        "end": [
+                            {
+                                "operator": "BackTo",
+                                "value": "ignore"
+                            }
+                        ],
+                        "isArray": true
+                    }
+                ]
+            }
+        ]
+    }
+}
