@@ -18,7 +18,7 @@
                         "start": [],
                         "extractors": [
                             {
-                                "field_name": "PrdLink",
+                                "field_name": "KhuyenMai",
                                 "start": [
                                     {
                                         "operator": "SkipTo",
@@ -34,6 +34,114 @@
                                     {
                                         "operator": "BackTo",
                                         "value": "</p>"
+                                    }
+                                ],
+                                "isArray": false
+                            }
+                        ],
+                        "end": [
+                            {
+                                "operator": "BackTo",
+                                "value": "ignore"
+                            }
+                        ],
+                        "isArray": true
+                    }
+                ]
+            }
+        ]
+    },
+    "FPT": {
+        "rules": [
+            {
+                "location": [],
+                "extractors": [
+                    {
+                        "field_name": "promotion",
+                        "start": [
+                            {
+                                "operator": "SkipTo",
+                                "value": "Khuyến mãi nổi bật"
+                            },
+                            {
+                                "operator": "SkipTo",
+                                "value": "<ul>"
+                            }
+                        ],
+                        "extractors": [
+                            {
+                                "field_name": "KhuyenMai",
+                                "start": [
+                                    {
+                                        "operator": "SkipTo",
+                                        "value": "<li"
+                                    },
+                                    {
+                                        "operator": "SkipTo",
+                                        "value": "<p"
+                                    },
+                                    {
+                                        "operator": "SkipTo",
+                                        "value": ">"
+                                    }
+                                ],
+                                "extractors": [],
+                                "end": [
+                                    {
+                                        "operator": "BackTo",
+                                        "value": "</p>"
+                                    }
+                                ],
+                                "isArray": false
+                            }
+                        ],
+                        "end": [
+                            {
+                                "operator": "BackTo",
+                                "value": "</ul>"
+                            }
+                        ],
+                        "isArray": true
+                    }
+                ]
+            }
+        ]
+    },
+    "HH": {
+        "rules": [
+            {
+                "location": [
+                    {
+                        "tag": "div",
+                        "attribute": {
+                            "att_type": "class",
+                            "att_value": "product-promotion"
+                        },
+                        "tag_index": 1
+                    }
+                ],
+                "extractors": [
+                    {
+                        "field_name": "promotion",
+                        "start": [],
+                        "extractors": [
+                            {
+                                "field_name": "KhuyenMai",
+                                "start": [
+                                    {
+                                        "operator": "SkipTo",
+                                        "value": "<li>"
+                                    },
+                                    {
+                                        "operator": "SkipTo",
+                                        "value": "</i>"
+                                    }
+                                ],
+                                "extractors": [],
+                                "end": [
+                                    {
+                                        "operator": "BackTo",
+                                        "value": "</li>"
                                     }
                                 ],
                                 "isArray": false

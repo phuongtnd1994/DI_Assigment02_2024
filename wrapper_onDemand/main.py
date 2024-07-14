@@ -6,6 +6,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import uuid
 from datetime import datetime
 from config import config
@@ -22,6 +24,12 @@ channel = connection.channel()
 channel.queue_declare(queue='request_queue')
 channel.queue_declare(queue='response_queue')
 
+#
+json_file_path ="/Users/phuongtnd/Documents/GitHub/DI_Assigment02_2024/wrapper_onDemand/crawlers.json"
+with open(json_file_path, 'r', encoding='utf-8') as file:
+        etlConfig = json.load(file)
+    
+# print(etlConfig)
 
 #crawler
 
@@ -39,22 +47,41 @@ def get_url_content(target_link, m_header):
 
         #using selenium
         chrome_options = Options()
+        chrome_options.add_argument("--disable-notifications") 
+        prefs = {"profile.default_content_setting_values.notifications": 2,  
+         "profile.default_content_setting_values.popups": 2}  
+        chrome_options.add_experimental_option("prefs", prefs)
+
         service = Service('/usr/local/bin/chromedriver') 
         driver = webdriver.Chrome(service=service, options=chrome_options)
 
-        driver.get(target_link['url'])
-        last_height = driver.execute_script("return document.body.scrollHeight")
+        if "hoanghamobile" in target_link['url']:
+            try:
+                driver.get("https://hoanghamobile.com/dien-thoai-di-dong")
+                time.sleep(2)
+            except:
+                traceback.print_exc()
 
-        while True:
-            time.sleep(2)
-            # Cuộn xuống dưới cùng của trang
-            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-            
-            # Tính toán chiều cao mới của trang và so sánh với chiều cao cũ
-            new_height = driver.execute_script("return document.body.scrollHeight")
-            if new_height == last_height:
-                break
-            last_height = new_height
+        driver.get(target_link['url'])
+
+        #tat modal hoang ha
+        
+
+        last_height = driver.execute_script("return document.body.scrollHeight")
+        if "hoanghamobile" not in target_link['url']:
+            try:
+                while True:
+                    time.sleep(2)
+                    # Cuộn xuống dưới cùng của trang
+                    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                    
+                    # Tính toán chiều cao mới của trang và so sánh với chiều cao cũ
+                    new_height = driver.execute_script("return document.body.scrollHeight")
+                    if new_height == last_height:
+                        break
+                    last_height = new_height
+            except:
+                pass
 
         time.sleep(5) 
         page_source = driver.page_source
@@ -227,10 +254,32 @@ def save_file(rs):
 def callback(ch, method, properties, body):
     strMessage = body.decode('utf-8')
     data = json.loads(strMessage)
-    print(data)
+    # print(data)
     for dt in data:
-        print(dt)
-        
+        if etlConfig.get(dt["prd_src"]) is None:
+            continue
+        try:
+            dtRules = etlConfig.get(dt["prd_src"])["rules"]
+
+            lnk= {"url":dt["prd_domain"] + dt["prd_link"]}
+            the_soup = get_url_content(lnk, None)
+            rs = extract_data(the_soup, dtRules)
+            
+            if rs.get("promotion") is not None:
+                for s in rs["promotion"]:
+                    s["KhuyenMai"] = fineString(s["KhuyenMai"])
+
+            print(rs)
+        except:
+            continue
+
+def fineString(s):
+    try:
+        soup = BeautifulSoup(s, 'html.parser')
+        text = soup.get_text()
+        return text
+    except:
+        return s
 
 if __name__ == "__main__":
     channel.basic_consume(queue='request_queue', on_message_callback=callback, auto_ack=True)
