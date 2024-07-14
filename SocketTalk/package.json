@@ -1,0 +1,22 @@
+{
+  "name": "sockettalk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "kafkajs": "^2.2.2",
+    "pg": "^8.12.0",
+    "redis": "^4.6.4",
+    "socket.io": "^4.5.3"
+  }
+}
