@@ -1,0 +1,573 @@
+{
+    "MWG_LIST": [
+        {
+            "PrdLink": "/dtdd/vivo-y28",
+            "PrdName": "vivo Y28",
+            "PrdPrice": "5.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/iphone-15-pro-max",
+            "PrdName": "iPhone 15 Pro Max",
+            "PrdPrice": "29.390.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-s23-ultra",
+            "PrdName": "Samsung Galaxy S23 Ultra 5G",
+            "PrdPrice": "23.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-reno11-f-5g",
+            "PrdName": "OPPO Reno11 F 5G",
+            "PrdPrice": "7.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/xiaomi-redmi-13-6gb-128gb",
+            "PrdName": "Xiaomi Redmi 13",
+            "PrdPrice": "4.090.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/xiaomi-redmi-note-13",
+            "PrdName": "Xiaomi Redmi Note 13",
+            "PrdPrice": "5.290.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/realme-c65",
+            "PrdName": "realme C65",
+            "PrdPrice": "4.190.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-a55-5g",
+            "PrdName": "Samsung Galaxy A55 5G",
+            "PrdPrice": "11.090.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/iphone-13",
+            "PrdName": "iPhone 13",
+            "PrdPrice": "14.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-m35-5g",
+            "PrdName": "Samsung Galaxy M35 5G 8GB/256GB",
+            "PrdPrice": "8.290.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/xiaomi-redmi-note-13-pro",
+            "PrdName": "Xiaomi Redmi Note 13 Pro",
+            "PrdPrice": "6.690.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-m55-5g-12gb-256gb",
+            "PrdName": "Samsung Galaxy M55 5G",
+            "PrdPrice": "11.690.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-a58-4g",
+            "PrdName": "OPPO A58",
+            "PrdPrice": "5.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-m54",
+            "PrdName": "Samsung Galaxy M54 5G 8GB/256GB",
+            "PrdPrice": "7.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/realme-note-50-64gb",
+            "PrdName": "realme Note 50",
+            "PrdPrice": "2.190.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-s23-fe",
+            "PrdName": "Samsung Galaxy S23 FE 5G",
+            "PrdPrice": "12.390.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-a35-5g",
+            "PrdName": "Samsung Galaxy A35 5G",
+            "PrdPrice": "8.190.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/vivo-y36-128gb",
+            "PrdName": "vivo Y36",
+            "PrdPrice": "4.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-a18",
+            "PrdName": "OPPO A18",
+            "PrdPrice": "2.790.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/xiaomi-redmi-13c",
+            "PrdName": "Xiaomi Redmi 13C",
+            "PrdPrice": "2.590.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-s24-ultra-5g",
+            "PrdName": "Samsung Galaxy S24 Ultra 5G",
+            "PrdPrice": "27.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/iphone-15-pro",
+            "PrdName": "iPhone 15 Pro",
+            "PrdPrice": "25.190.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/xiaomi-redmi-a3",
+            "PrdName": "Xiaomi Redmi A3",
+            "PrdPrice": "2.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/iphone-15-plus",
+            "PrdName": "iPhone 15 Plus",
+            "PrdPrice": "22.790.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/iphone-15",
+            "PrdName": "iPhone 15",
+            "PrdPrice": "19.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/vivo-y100",
+            "PrdName": "vivo Y100",
+            "PrdPrice": "6.890.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-s24-256gb-5g",
+            "PrdName": "Samsung Galaxy S24 5G",
+            "PrdPrice": "18.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/vivo-y03",
+            "PrdName": "vivo Y03",
+            "PrdPrice": "3.290.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-reno12-pro",
+            "PrdName": "OPPO Reno12 Pro 5G 12GB/512GB",
+            "PrdPrice": "18.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-reno12-5g-12gb-256gb-hong",
+            "PrdName": "OPPO Reno12 5G 12GB/256GB Hồng",
+            "PrdPrice": "12.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-reno12-5g-12gb-256gb",
+            "PrdName": "OPPO Reno12 5G",
+            "PrdPrice": "12.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-reno12-f-5g-12gb-256gb",
+            "PrdName": "OPPO Reno12 F 5G",
+            "PrdPrice": "9.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-s24-plus-5g",
+            "PrdName": "Samsung Galaxy S24+ 5G",
+            "PrdPrice": "22.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-reno11",
+            "PrdName": "OPPO Reno11 5G 8GB/256GB",
+            "PrdPrice": "10.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/iphone-11",
+            "PrdName": "iPhone 11",
+            "PrdPrice": "8.790.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/realme-c67",
+            "PrdName": "realme C67",
+            "PrdPrice": "5.090.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/iphone-12",
+            "PrdName": "iPhone 12",
+            "PrdPrice": "11.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/realme-c53",
+            "PrdName": "realme C53",
+            "PrdPrice": "3.390.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/iphone-14-pro-max",
+            "PrdName": "iPhone 14 Pro Max",
+            "PrdPrice": "26.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-a38-6gb",
+            "PrdName": "OPPO A38",
+            "PrdPrice": "3.890.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/vivo-y17s",
+            "PrdName": "vivo Y17s",
+            "PrdPrice": "3.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-reno11-pro",
+            "PrdName": "OPPO Reno11 Pro 5G 12GB/512GB",
+            "PrdPrice": "15.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-a34",
+            "PrdName": "Samsung Galaxy A34 5G 8GB/256GB",
+            "PrdPrice": "8.290.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-a25-8gb",
+            "PrdName": "Samsung Galaxy A25 5G",
+            "PrdPrice": "6.390.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-a15-5g",
+            "PrdName": "Samsung Galaxy A15 5G 8GB/256GB",
+            "PrdPrice": "5.690.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-a15-256gb",
+            "PrdName": "Samsung Galaxy A15",
+            "PrdPrice": "5.190.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-a24",
+            "PrdName": "Samsung Galaxy A24",
+            "PrdPrice": "4.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-a05s-6gb",
+            "PrdName": "Samsung Galaxy A05s",
+            "PrdPrice": "4.090.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-a05",
+            "PrdName": "Samsung Galaxy A05",
+            "PrdPrice": "3.290.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-reno10",
+            "PrdName": "OPPO Reno10 5G 8GB/256GB",
+            "PrdPrice": "8.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/xiaomi-redmi-note-13-pro-5g",
+            "PrdName": "Xiaomi Redmi Note 13 Pro 5G",
+            "PrdPrice": "7.890.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-reno10-pro",
+            "PrdName": "OPPO Reno10 Pro 5G 12GB/256GB",
+            "PrdPrice": "10.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-reno10-pro-plus",
+            "PrdName": "OPPO Reno10 Pro+ 5G 12GB/256GB",
+            "PrdPrice": "15.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/xiaomi-14",
+            "PrdName": "Xiaomi 14 5G",
+            "PrdPrice": "21.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-reno8-t",
+            "PrdName": "OPPO Reno8 T 8GB/256GB",
+            "PrdPrice": "6.090.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/masstel-fami-50",
+            "PrdName": "Masstel Fami 50 4G",
+            "PrdPrice": "600.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/masstel-izi-t6",
+            "PrdName": "Masstel IZI T6 4G",
+            "PrdPrice": "500.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/masstel-izi-10",
+            "PrdName": "Masstel IZI 10 4G",
+            "PrdPrice": "390.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/masstel-fami-60",
+            "PrdName": "Masstel FAMI 60 4G",
+            "PrdPrice": "600.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/masstel-lux-10",
+            "PrdName": "Masstel Lux 10",
+            "PrdPrice": "420.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/realme-c51",
+            "PrdName": "realme C51",
+            "PrdPrice": "2.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-z-fold6",
+            "PrdName": "Samsung Galaxy Z Fold6 5G",
+            "PrdPrice": "43.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-find-n3",
+            "PrdName": "OPPO Find N3 5G 16GB/512GB",
+            "PrdPrice": "41.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/xiaomi-14-ultra",
+            "PrdName": "Xiaomi 14 Ultra 5G 16GB/512GB",
+            "PrdPrice": "28.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-z-flip6",
+            "PrdName": "Samsung Galaxy Z Flip6 5G",
+            "PrdPrice": "28.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-z-fold5",
+            "PrdName": "Samsung Galaxy Z Fold5 5G 12GB/256GB",
+            "PrdPrice": "27.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-find-n3-flip-hong",
+            "PrdName": "OPPO Find N3 Flip 5G",
+            "PrdPrice": "22.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/iphone-14-plus",
+            "PrdName": "iPhone 14 Plus",
+            "PrdPrice": "19.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/iphone-14",
+            "PrdName": "iPhone 14",
+            "PrdPrice": "17.890.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-z-flip5",
+            "PrdName": "Samsung Galaxy Z Flip5 5G",
+            "PrdPrice": "15.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/vivo-v30",
+            "PrdName": "vivo V30 5G 12GB/512GB",
+            "PrdPrice": "13.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-find-n2-flip",
+            "PrdName": "OPPO Find N2 Flip 5G 8GB/256GB",
+            "PrdPrice": "13.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-s23-fe-5g-256gb",
+            "PrdName": "Samsung Galaxy S23 FE 5G 8GB/256GB",
+            "PrdPrice": "12.890.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/xiaomi-13t",
+            "PrdName": "Xiaomi 13T 5G 8GB/256GB",
+            "PrdPrice": "10.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/vivo-v30e-12gb",
+            "PrdName": "vivo V30e 5G",
+            "PrdPrice": "10.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/realme-11-pro-plus-5g?utm_flashsale=1",
+            "PrdName": "realme 11 Pro+ 5G 12GB/512GB",
+            "PrdPrice": "9.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/xiaomi-redmi-note-13-pro-plus",
+            "PrdName": "Xiaomi Redmi Note 13 Pro+ 5G 8GB/256GB",
+            "PrdPrice": "9.290.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/vivo-v29e-5g",
+            "PrdName": "vivo V29e 5G 12GB/256GB",
+            "PrdPrice": "8.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-a79-5g",
+            "PrdName": "OPPO A79 5G 8GB/256GB",
+            "PrdPrice": "7.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-a98-5g",
+            "PrdName": "OPPO A98 5G 8GB/256GB",
+            "PrdPrice": "6.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-a78",
+            "PrdName": "OPPO A78 8GB/256GB",
+            "PrdPrice": "6.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/honor-x8b",
+            "PrdName": "HONOR X8b 8GB/512GB",
+            "PrdPrice": "6.690.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/honor-90-lite",
+            "PrdName": "HONOR 90 Lite 5G 8GB/256GB",
+            "PrdPrice": "5.490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-a60-128gb",
+            "PrdName": "OPPO A60",
+            "PrdPrice": "5.090.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/honor-x7b",
+            "PrdName": "HONOR X7b 8GB/256GB",
+            "PrdPrice": "4.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/vivo-y18-4gb-128gb",
+            "PrdName": "vivo Y18",
+            "PrdPrice": "3.790.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/samsung-galaxy-m15-5g-4gb",
+            "PrdName": "Samsung Galaxy M15 5G",
+            "PrdPrice": "4.390.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/vivo-y18s",
+            "PrdName": "vivo Y18S 6GB/128GB",
+            "PrdPrice": "3.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/xiaomi-poco-m6",
+            "PrdName": "Xiaomi POCO M6 6GB/128GB",
+            "PrdPrice": "3.890.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/tcl-40-nxtpaper",
+            "PrdName": "TCL 40 NXTPAPER 8GB/256GB",
+            "PrdPrice": "3.840.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/tecno-spark-20c",
+            "PrdName": "Tecno Spark 20C 8GB/128GB",
+            "PrdPrice": "3.190.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/oppo-a17k",
+            "PrdName": "OPPO A17K 3GB/64GB",
+            "PrdPrice": "2.790.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/vivo-y02t",
+            "PrdName": "vivo Y02T 4GB/64GB",
+            "PrdPrice": "2.790.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/realme-c60",
+            "PrdName": "realme C60 4GB/64GB",
+            "PrdPrice": "2.790.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/tcl-505",
+            "PrdName": "TCL 505 4GB/128GB",
+            "PrdPrice": "2.590.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/honor-x5-plus",
+            "PrdName": "HONOR X5 Plus 4GB/64GB",
+            "PrdPrice": "2.090.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/tcl-406s",
+            "PrdName": "TCL 406s 4GB/64GB",
+            "PrdPrice": "1.990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/tecno-spark-go-2024",
+            "PrdName": "Tecno Spark Go 2024 3GB/64GB",
+            "PrdPrice": "1.890.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/nokia-3210-4g",
+            "PrdName": "Nokia 3210 4G",
+            "PrdPrice": "1.590.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/nokia-220-4g",
+            "PrdName": "Nokia 220 4G",
+            "PrdPrice": "990.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/nokia-215",
+            "PrdName": "Nokia 215 4G",
+            "PrdPrice": "890.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/nokia-110-4g-pro",
+            "PrdName": "Nokia 110 4G Pro",
+            "PrdPrice": "720.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/mobell-f309",
+            "PrdName": "Mobell F309 4G",
+            "PrdPrice": "700.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/masstel-fami-60s",
+            "PrdName": "Masstel Fami 60S 4G",
+            "PrdPrice": "700.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/nokia-105-4g-pro",
+            "PrdName": "Nokia 105 4G Pro",
+            "PrdPrice": "680.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/mobell-rock-4",
+            "PrdName": "Mobell Rock 4 4G",
+            "PrdPrice": "670.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/mobell-m539",
+            "PrdName": "Mobell M539 4G",
+            "PrdPrice": "650.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/nokia-105-4g",
+            "PrdName": "Nokia 105",
+            "PrdPrice": "610.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/mobell-f209",
+            "PrdName": "Mobell F209 4G",
+            "PrdPrice": "570.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/itel-it9210",
+            "PrdName": "Itel it9210",
+            "PrdPrice": "550.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/mobell-m331",
+            "PrdName": "Mobell M331 4G",
+            "PrdPrice": "490.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/itel-it9010",
+            "PrdName": "Itel it9010",
+            "PrdPrice": "420.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/mobell-m239",
+            "PrdName": "Mobell M239",
+            "PrdPrice": "400.000₫"
+        },
+        {
+            "PrdLink": "/dtdd/honor-90",
+            "PrdName": "HONOR 90 12GB/256GB"
+        }
+    ]
+}

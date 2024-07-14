@@ -1,0 +1,96 @@
+{
+    "Target_links": [
+        {
+            "url": "https://hoanghamobile.com/dien-thoai-di-dong?p=10#page_10"
+        }
+    ],
+    "Modified_hearder": {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
+        "Referer": "https://www.thegioididong.com/",
+        "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+        "sec-ch-ua-platform": "\"macOS\""
+    },
+    "rules": [
+        {
+            "location": [],
+            "extractors": [
+                {
+                    "field_name": "Danh sách điện thoại",
+                    "start": [],
+                    "extractors": [
+                        {
+                            "field_name": "PrdLink",
+                            "start": [
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "class=\"item\""
+                                },
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "href=\""
+                                }
+                            ],
+                            "extractors": [],
+                            "end": [
+                                {
+                                    "operator": "BackTo",
+                                    "value": "\""
+                                }
+                            ],
+                            "isArray": false
+                        },
+                        {
+                            "field_name": "PrdName",
+                            "start": [
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "class=\"info\">"
+                                },
+                                {
+                                    "operator": "SkipTo",
+                                    "value": ">"
+                                }
+                            ],
+                            "extractors": [],
+                            "end": [
+                                {
+                                    "operator": "BackTo",
+                                    "value": "</"
+                                }
+                            ],
+                            "isArray": false
+                        },
+                        {
+                            "field_name": "PrdPrice",
+                            "start": [
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "class=\"price\">"
+                                },
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "strong>"
+                                }
+                            ],
+                            "extractors": [],
+                            "end": [
+                                {
+                                    "operator": "BackTo",
+                                    "value": "</"
+                                }
+                            ],
+                            "isArray": false
+                        }
+                    ],
+                    "end": [
+                        {
+                            "operator": "BackTo",
+                            "value": "ignore"
+                        }
+                    ],
+                    "isArray": true
+                }
+            ]
+        }
+    ]
+}

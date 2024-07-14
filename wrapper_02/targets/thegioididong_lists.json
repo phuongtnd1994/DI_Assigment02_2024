@@ -1,0 +1,97 @@
+{
+    "Target_links": [
+        {
+            "url": "https://www.thegioididong.com/dtdd#c=42&o=17&pi=5"
+        }
+    ],
+    "Modified_hearder": {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
+        "Referer": "https://www.thegioididong.com/",
+        "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+        "sec-ch-ua-platform": "\"macOS\""
+    },
+    "rules": [
+        {
+            "location": [
+                {
+                    "tag": "ul",
+                    "attribute": {
+                        "att_type": "class",
+                        "att_value": "listproduct"
+                    },
+                    "tag_index": 0
+                }
+            ],
+            "extractors": [
+                {
+                    "field_name": "Danh sách điện thoại",
+                    "start": [],
+                    "extractors": [
+                        {
+                            "field_name": "PrdLink",
+                            "start": [
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "<li"
+                                },
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "href=\""
+                                }
+                            ],
+                            "extractors": [],
+                            "end": [
+                                {
+                                    "operator": "BackTo",
+                                    "value": "\""
+                                }
+                            ],
+                            "isArray": false
+                        },
+                        {
+                            "field_name": "PrdName",
+                            "start": [
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "<h3>"
+                                }
+                            ],
+                            "extractors": [],
+                            "end": [
+                                {
+                                    "operator": "BackTo",
+                                    "value": "</h3>"
+                                }
+                            ],
+                            "isArray": false
+                        },
+                        {
+                            "field_name": "PrdPrice",
+                            "start": [
+                                {
+                                    "operator": "SkipTo",
+                                    "value": "class=\"price\">"
+                                }
+                            ],
+                            "extractors": [],
+                            "end": [
+                                {
+                                    "operator": "BackTo",
+                                    "value": "</"
+                                }
+                            ],
+                            "isArray": false
+                        }
+                    ],
+                    "end": [
+                        {
+                            "operator": "BackTo",
+                            "value": "ignore"
+                        }
+                    ],
+                    "isArray": true
+                }
+            ]
+        }
+    ]
+}
